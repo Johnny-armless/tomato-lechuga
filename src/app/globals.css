@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+/* Halftone background — classic comic book printing feel */
+body {
+  background-color: #FFFBEB;
+  background-image: radial-gradient(circle, #FCD34D 1px, transparent 1px);
+  background-size: 20px 20px;
+  min-height: 100svh;
+}
+
+/* Button press animation — shifts into the shadow on click */
+.comic-btn:active {
+  transform: translate(3px, 3px) !important;
+}

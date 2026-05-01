@@ -1,0 +1,191 @@
+const book = {
+  id: 'tomato-lechuga',
+  title: 'Francisco & Lechuga',
+  slug: 'tomato-lechuga',
+  pages: [
+    {
+      number: 1,
+      image: '/books/tomato-lechuga/images/image-01.png',
+      audio: '/books/tomato-lechuga/audio/audio-01.mp3',
+      paragraphs: [
+        'Once upon a time,\num tomate chamado Francisco 🍅',
+        'Ele morava dentro de uma fridge (geladeira)',
+        'Mas ele tinha um problema…\n👉 ele amava a alfacinha 🥬',
+        'Ela ficava na gaveta inferior…\njunto com o cucumber 😒',
+      ],
+    },
+    {
+      number: 2,
+      image: '/books/tomato-lechuga/images/image-02.png',
+      audio: '/books/tomato-lechuga/audio/audio-02.mp3',
+      paragraphs: [
+        'Francisco não parava de pensar nela…',
+        '👉 "Lechuga…" 💭',
+        'Ele sonhava com ela o tempo todo…',
+      ],
+    },
+    {
+      number: 3,
+      image: '/books/tomato-lechuga/images/image-03.png',
+      audio: '/books/tomato-lechuga/audio/audio-03.mp3',
+      paragraphs: [
+        'Um dia, ele criou coragem…',
+        '👉 "Hello!"',
+        'Lechuga respondeu:\n👉 "Hello, tomato. How are you?"',
+        'Francisco disse:\n👉 "Lechuga… quando vamos fazer um delicious sandwich juntos?" 😏',
+      ],
+    },
+    {
+      number: 4,
+      image: '/books/tomato-lechuga/images/image-04.png',
+      audio: '/books/tomato-lechuga/audio/audio-04.mp3',
+      paragraphs: [
+        'Lechuga ficou sem graça… 😳',
+        '👉 "My friend… eu sou committed…"',
+        'E mostrou a aliança 💍',
+        'Francisco começou a chorar 😢',
+      ],
+    },
+    {
+      number: 5,
+      image: '/books/tomato-lechuga/images/image-05.png',
+      audio: '/books/tomato-lechuga/audio/audio-05.mp3',
+      paragraphs: [
+        'Francisco implorou…',
+        '👉 "Please… o que eu posso fazer?"',
+        '👉 "Anything… eu faço qualquer coisa por você!"',
+      ],
+    },
+    {
+      number: 6,
+      image: '/books/tomato-lechuga/images/image-06.png',
+      audio: '/books/tomato-lechuga/audio/audio-06.mp3',
+      paragraphs: [
+        'Lechuga disse:',
+        '👉 "Se você conseguir sair da fridge…"\n👉 "e pegar um ice cream no freezer…"',
+        '👉 "eu faço um sandwich com você."',
+        'Francisco respondeu:\n👉 "Say no more!"',
+      ],
+    },
+    {
+      number: 7,
+      image: '/books/tomato-lechuga/images/image-07.png',
+      audio: '/books/tomato-lechuga/audio/audio-07.mp3',
+      paragraphs: [
+        'Ele começou a escalar a geladeira…',
+        'Cheia de ímãs…\nSpain… France… Peru…',
+        'Mas de repente…',
+        '👉 PLAFAT! 😵',
+        'Ele escorregou no ímã do Peru e caiu!',
+      ],
+    },
+    {
+      number: 8,
+      image: '/books/tomato-lechuga/images/image-08.png',
+      audio: '/books/tomato-lechuga/audio/audio-08.mp3',
+      paragraphs: [
+        'E pior…',
+        '👉 o Gaspar, o cão malucão 🐶',
+        'Francisco rolou… rolou…',
+        'E se escondeu debaixo do fogão',
+        '👉 "Nunca mais vou fazer um sandwich…" 😞',
+      ],
+    },
+    {
+      number: 9,
+      image: '/books/tomato-lechuga/images/image-09.png',
+      audio: '/books/tomato-lechuga/audio/audio-09.mp3',
+      paragraphs: [
+        'Dentro da geladeira…',
+        'O pepino disse:',
+        '👉 "Salada de pepino com alface é muito melhor!"\n👉 "Yuck! Sandwich é horrível!"',
+        'Então ele teve uma ideia…',
+        '👉 "I bet 10 euros que você não abre a fridge."',
+        'O leite respondeu:\n👉 "Easy money."',
+      ],
+    },
+    {
+      number: 10,
+      image: '/books/tomato-lechuga/images/image-10.png',
+      audio: '/books/tomato-lechuga/audio/audio-10.mp3',
+      paragraphs: [
+        'O leite abriu a geladeira…',
+        'E naquele momento…',
+        'Francisco vinha rolando…',
+        'Mas muito rápido…',
+        '👉 CRASH!',
+        'O leite caiu…',
+        'E…',
+        '👉 PLOFT! 😵🍅',
+        'O dono pisou no Francisco',
+      ],
+    },
+    {
+      number: 11,
+      image: '/books/tomato-lechuga/images/image-11.png',
+      audio: '/books/tomato-lechuga/audio/audio-11.mp3',
+      paragraphs: [
+        'O dono olhou…',
+        '👉 "Oh…"',
+        'E pegou o tomate do chão',
+      ],
+    },
+    {
+      number: 12,
+      image: '/books/tomato-lechuga/images/image-12.png',
+      audio: '/books/tomato-lechuga/audio/audio-12.mp3',
+      paragraphs: [
+        'Dentro da geladeira…',
+        'Lechuga chorava 😢',
+        'O pepino disse:\n👉 "Sorry… foi ciúmes…"',
+        'Lechuga respondeu:\n👉 "Nunca devemos ter ciúmes de quem amamos…"',
+      ],
+    },
+    {
+      number: 13,
+      image: '/books/tomato-lechuga/images/image-13.png',
+      audio: '/books/tomato-lechuga/audio/audio-13.mp3',
+      paragraphs: [
+        'O dono pegou:',
+        '👉 tomates 🍅\n👉 alho 🧄\n👉 cebola 🧅',
+        'E colocou tudo no blender',
+      ],
+    },
+    {
+      number: 14,
+      image: '/books/tomato-lechuga/images/image-14.png',
+      audio: '/books/tomato-lechuga/audio/audio-14.mp3',
+      paragraphs: [
+        '👉 BZZZZZZZ!!!',
+        'Tudo virou…',
+        '👉 KETCHUP!!! 😄',
+        'Francisco agora era ketchup…\ne estava feliz',
+      ],
+    },
+    {
+      number: 15,
+      image: '/books/tomato-lechuga/images/image-15.png',
+      audio: '/books/tomato-lechuga/audio/audio-15.mp3',
+      paragraphs: [
+        'Agora…',
+        'Francisco estava no hamburger 🍔',
+        'Com a Lechuga…',
+        '👉 juntos 😄',
+      ],
+    },
+    {
+      number: 16,
+      image: '/books/tomato-lechuga/images/image-16.png',
+      audio: '/books/tomato-lechuga/audio/audio-16.mp3',
+      paragraphs: [
+        'O homem abriu a boca… 😋',
+        '👉 "Delicious!"',
+        'E deu uma grande mordida…',
+        '🎯 MORAL FINAL',
+        '👉 Não prometa o impossível\n👉 Não tenha ciúmes\n👉 E o amor… pode mudar tudo 🍅🥬',
+      ],
+    },
+  ],
+};
+
+export default book;
