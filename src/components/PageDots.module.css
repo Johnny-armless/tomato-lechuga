@@ -1,0 +1,42 @@
+.dots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  justify-content: center;
+  max-width: 440px;
+  width: 100%;
+}
+
+.dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  padding: 0;
+  cursor: pointer;
+  transition: transform 0.15s;
+  box-shadow: 2px 2px 0 #000;
+  background: #FDE047;
+}
+
+.active {
+  background: #DC2626;
+  transform: scale(1.35);
+}
+
+/* ── Landscape mobile ── */
+@media (orientation: landscape) and (max-height: 520px) {
+  .dots { grid-area: dots; gap: 5px; }
+  .dot  { width: 12px; height: 12px; }
+}
+
+/* ── Tablet portrait ── */
+@media (min-width: 768px) and (orientation: portrait) {
+  .dot { width: 20px; height: 20px; }
+}
+
+/* ── Desktop ── */
+@media (min-width: 1024px) {
+  .dots { grid-area: dots; }
+  .dot  { width: 20px; height: 20px; }
+}

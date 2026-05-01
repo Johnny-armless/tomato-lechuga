@@ -1,0 +1,42 @@
+.btn {
+  font-family: var(--font-lilita);
+  font-size: 1.7rem;
+  padding: 12px 40px;
+  border-radius: 50px;
+  border: 3px solid #000;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: transform 0.08s;
+  flex-shrink: 0;
+  line-height: 1;
+  background: #FDE047;
+  color: #000;
+  box-shadow: 4px 4px 0 #b45309;
+}
+
+.btn.playing {
+  background: #DC2626;
+  box-shadow: 4px 4px 0 #7f1d1d;
+}
+
+.btn:active {
+  transform: translate(3px, 3px);
+}
+
+/* ── Landscape mobile ── */
+@media (orientation: landscape) and (max-height: 520px) {
+  .btn { font-size: 1.15rem; padding: 7px 20px; flex-shrink: 0; }
+}
+
+/* ── Tablet portrait ── */
+@media (min-width: 768px) and (orientation: portrait) {
+  .btn { font-size: 2rem; padding: 14px 52px; }
+}
+
+/* ── Desktop ── */
+@media (min-width: 1024px) {
+  .btn { font-size: 2rem; padding: 14px 52px; }
+}

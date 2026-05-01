@@ -2,12 +2,12 @@
 
 import { useState, useRef } from 'react';
 import { useRouter } from 'next/navigation';
-import s from '../app/Home.module.css';
+import s from './BookCard.module.css';
 
 export default function BookCard({ book }) {
-  const [imgError, setImgError] = useState(false);
+  const [imgError,  setImgError]  = useState(false);
   const [isOpening, setIsOpening] = useState(false);
-  const router = useRouter();
+  const router   = useRouter();
   const audioRef = useRef(null);
 
   const handleClick = () => {

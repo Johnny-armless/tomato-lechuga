@@ -1,0 +1,57 @@
+.panel {
+  width: 100%;
+  background: #FFFEF5;
+  border: 4px solid #000;
+  box-shadow: 6px 6px 0 #000;
+  border-radius: 4px;
+  padding: 18px 22px;
+}
+
+.para {
+  font-family: var(--font-nunito);
+  font-size: 1.22rem;
+  font-weight: 800;
+  line-height: 1.6;
+  white-space: pre-line;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.para:last-child { margin-bottom: 0; }
+
+.dialogue {
+  font-size: 1.28rem;
+  border-left: 5px solid #FDE047;
+  padding-left: 12px;
+}
+
+.moral {
+  font-family: var(--font-lilita);
+  font-size: 1.6rem;
+  color: #DC2626;
+  font-weight: 400;
+}
+
+/* ── Landscape mobile ── */
+@media (orientation: landscape) and (max-height: 520px) {
+  .panel    { flex: 1; min-height: 0; overflow-y: auto; padding: 10px 14px; border-width: 3px; box-shadow: 3px 3px 0 #000; border-radius: 3px; }
+  .para     { font-size: 0.9rem; margin-bottom: 7px; }
+  .dialogue { font-size: 0.95rem; }
+  .moral    { font-size: 1.15rem; }
+}
+
+/* ── Tablet portrait ── */
+@media (min-width: 768px) and (orientation: portrait) {
+  .panel    { padding: 22px 28px; }
+  .para     { font-size: 1.4rem; margin-bottom: 14px; }
+  .dialogue { font-size: 1.48rem; }
+  .moral    { font-size: 2rem; }
+}
+
+/* ── Desktop ── */
+@media (min-width: 1024px) {
+  .panel    { flex: 1; min-height: 0; overflow-y: auto; padding: 24px 28px; }
+  .para     { font-size: 1.45rem; margin-bottom: 14px; }
+  .dialogue { font-size: 1.52rem; }
+  .moral    { font-size: 2.1rem; }
+}

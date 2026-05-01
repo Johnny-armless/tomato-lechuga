@@ -15,83 +15,6 @@
   box-sizing: border-box;
 }
 
-/* ── Header ── */
-.header {
-  width: 100%;
-  background: #DC2626;
-  border: 4px solid #000;
-  box-shadow: 5px 5px 0 #000;
-  border-radius: 4px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 18px;
-  flex-shrink: 0;
-  gap: 8px;
-}
-
-.homeBtn {
-  font-size: 1.5rem;
-  line-height: 1;
-  text-decoration: none;
-  background: #fff;
-  border: 3px solid #000;
-  border-radius: 6px;
-  padding: 2px 8px;
-  box-shadow: 3px 3px 0 #000;
-  flex-shrink: 0;
-  transition: transform 0.08s;
-}
-
-.homeBtn:active {
-  transform: translate(2px, 2px);
-  box-shadow: 1px 1px 0 #000;
-}
-
-.headerTitle {
-  font-family: var(--font-lilita);
-  font-size: 1.7rem;
-  color: #fff;
-  line-height: 1;
-}
-
-.headerPage {
-  font-family: var(--font-lilita);
-  font-size: 1.15rem;
-  color: #FDE047;
-  background: #000;
-  padding: 2px 12px;
-  border-radius: 20px;
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-
-/* ── Image panel ── */
-.imagePanel {
-  width: 100%;
-  background: #fff;
-  border: 4px solid #000;
-  box-shadow: 6px 6px 0 #000;
-  border-radius: 4px;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-
-.image {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.imageFallback {
-  background: #FEF9C3;
-  text-align: center;
-  font-size: 6rem;
-  padding: 48px 0;
-  width: 100%;
-}
-
-/* ── Right column — play + text (stacked in portrait) ── */
 .rightCol {
   display: flex;
   flex-direction: column;
@@ -100,117 +23,9 @@
   width: 100%;
 }
 
-/* ── Play button ── */
-.playBtn {
-  font-family: var(--font-lilita);
-  font-size: 1.7rem;
-  padding: 12px 40px;
-  border-radius: 50px;
-  border: 3px solid #000;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  transition: transform 0.08s;
-  flex-shrink: 0;
-  line-height: 1;
-}
-
-.playBtn:active {
-  transform: translate(3px, 3px);
-}
-
-/* ── Text panel ── */
-.textPanel {
-  width: 100%;
-  background: #FFFEF5;
-  border: 4px solid #000;
-  box-shadow: 6px 6px 0 #000;
-  border-radius: 4px;
-  padding: 18px 22px;
-}
-
-.para {
-  font-family: var(--font-nunito);
-  font-size: 1.22rem;
-  font-weight: 800;
-  line-height: 1.6;
-  white-space: pre-line;
-  color: #111;
-  margin-bottom: 10px;
-}
-
-.para:last-child {
-  margin-bottom: 0;
-}
-
-.paraDialogue {
-  font-size: 1.28rem;
-  border-left: 5px solid #FDE047;
-  padding-left: 12px;
-}
-
-.paraMoral {
-  font-family: var(--font-lilita);
-  font-size: 1.6rem;
-  color: #DC2626;
-  font-weight: 400;
-}
-
-/* ── Navigation ── */
-.nav {
-  width: 100%;
-  display: flex;
-  gap: 12px;
-  flex-shrink: 0;
-}
-
-.navBtn {
-  flex: 1;
-  font-family: var(--font-lilita);
-  font-size: 1.45rem;
-  padding: 15px 8px;
-  border-radius: 4px;
-  border: 3px solid #000;
-  cursor: pointer;
-  transition: transform 0.08s;
-  line-height: 1;
-}
-
-.navBtn:not(:disabled):active {
-  transform: translate(3px, 3px);
-}
-
-/* ── Page dots ── */
-.dots {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 7px;
-  justify-content: center;
-  max-width: 440px;
-  width: 100%;
-}
-
-.dot {
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  border: 2px solid #000;
-  padding: 0;
-  cursor: pointer;
-  transition: transform 0.15s;
-  box-shadow: 2px 2px 0 #000;
-}
-
-.dotActive {
-  transform: scale(1.35);
-}
-
 
 /* ========================================
    CELULAR LANDSCAPE — orientação paisagem
-   Tela curta: dois colunas lado a lado
    ======================================== */
 @media (orientation: landscape) and (max-height: 520px) {
   .wrapper {
@@ -229,22 +44,6 @@
     align-items: start;
   }
 
-  .header {
-    grid-area: header;
-    padding: 6px 14px;
-    box-shadow: 3px 3px 0 #000;
-  }
-  .headerTitle { font-size: 1.25rem; }
-  .headerPage  { font-size: 0.9rem; }
-
-  .imagePanel {
-    grid-area: image;
-    border-width: 3px;
-    box-shadow: 3px 3px 0 #000;
-    border-radius: 3px;
-  }
-  .imageFallback { padding: 16px 0; font-size: 3.5rem; }
-
   .rightCol {
     grid-area: right;
     align-self: stretch;
@@ -252,45 +51,11 @@
     overflow: hidden;
     min-height: 0;
   }
-
-  .playBtn {
-    font-size: 1.15rem;
-    padding: 7px 20px;
-    flex-shrink: 0;
-  }
-
-  .textPanel {
-    flex: 1;
-    min-height: 0;
-    overflow-y: auto;
-    padding: 10px 14px;
-    border-width: 3px;
-    box-shadow: 3px 3px 0 #000;
-    border-radius: 3px;
-  }
-
-  .para         { font-size: 0.9rem;  margin-bottom: 7px; }
-  .paraDialogue { font-size: 0.95rem; }
-  .paraMoral    { font-size: 1.15rem; }
-
-  .nav {
-    grid-area: nav;
-    gap: 8px;
-  }
-  .navBtn {
-    font-size: 1.05rem;
-    padding: 8px 8px;
-    border-width: 2px;
-  }
-
-  .dots { grid-area: dots; gap: 5px; }
-  .dot  { width: 12px; height: 12px; }
 }
 
 
 /* ========================================
    TABLET PORTRAIT — 768px+
-   Mais espaço, fontes maiores
    ======================================== */
 @media (min-width: 768px) and (orientation: portrait) {
   .wrapper {
@@ -298,28 +63,11 @@
     padding: 20px 20px 40px;
     gap: 16px;
   }
-
-  .header { padding: 12px 24px; }
-  .headerTitle { font-size: 2.2rem; }
-  .headerPage  { font-size: 1.4rem; }
-
-
-  .playBtn { font-size: 2rem; padding: 14px 52px; }
-
-  .textPanel { padding: 22px 28px; }
-  .para          { font-size: 1.4rem;  margin-bottom: 14px; }
-  .paraDialogue  { font-size: 1.48rem; }
-  .paraMoral     { font-size: 2rem; }
-
-  .navBtn { font-size: 1.8rem; padding: 18px 8px; }
-
-  .dot { width: 20px; height: 20px; }
 }
 
 
 /* ========================================
    TABLET LANDSCAPE + DESKTOP — 1024px+
-   Dois colunas: imagem esquerda, conteúdo direita
    ======================================== */
 @media (min-width: 1024px) {
   .wrapper {
@@ -328,20 +76,14 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 1fr auto auto;
     grid-template-areas:
-      "header  header"
-      "image   right"
-      "nav     nav"
-      "dots    dots";
+      "header header"
+      "image  right"
+      "nav    nav"
+      "dots   dots";
     align-items: start;
     padding: 24px 24px 40px;
     gap: 20px;
     min-height: 100svh;
-  }
-
-  .header     { grid-area: header; }
-
-  .imagePanel {
-    grid-area: image;
   }
 
   .rightCol {
@@ -349,26 +91,4 @@
     align-self: stretch;
     gap: 16px;
   }
-
-  .playBtn {
-    font-size: 2rem;
-    padding: 14px 52px;
-  }
-
-  .textPanel {
-    flex: 1;
-    min-height: 0;
-    overflow-y: auto;
-    padding: 24px 28px;
-  }
-
-  .para          { font-size: 1.45rem; margin-bottom: 14px; }
-  .paraDialogue  { font-size: 1.52rem; }
-  .paraMoral     { font-size: 2.1rem; }
-
-  .nav  { grid-area: nav; }
-  .navBtn { font-size: 1.8rem; padding: 18px 8px; }
-
-  .dots { grid-area: dots; }
-  .dot  { width: 20px; height: 20px; }
 }
