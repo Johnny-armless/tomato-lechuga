@@ -30,6 +30,24 @@
   gap: 8px;
 }
 
+.homeBtn {
+  font-size: 1.5rem;
+  line-height: 1;
+  text-decoration: none;
+  background: #fff;
+  border: 3px solid #000;
+  border-radius: 6px;
+  padding: 2px 8px;
+  box-shadow: 3px 3px 0 #000;
+  flex-shrink: 0;
+  transition: transform 0.08s;
+}
+
+.homeBtn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0 #000;
+}
+
 .headerTitle {
   font-family: var(--font-lilita);
   font-size: 1.7rem;

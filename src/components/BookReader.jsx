@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useRef, useEffect } from 'react';
+import Link from 'next/link';
 import s from './BookReader.module.css';
 
 export default function BookReader({ book }) {
@@ -43,6 +44,7 @@ export default function BookReader({ book }) {
 
       {/* ── Header ── */}
       <header className={s.header}>
+        <Link href="/" className={s.homeBtn} aria-label="Voltar ao início">🏠</Link>
         <span className={s.headerTitle}>{book.title}</span>
         <span className={s.headerPage}>{page.number}/{totalPages}</span>
       </header>

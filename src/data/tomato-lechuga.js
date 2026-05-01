@@ -2,6 +2,9 @@ const book = {
   id: 'tomato-lechuga',
   title: 'Francisco & Lechuga',
   slug: 'tomato-lechuga',
+  cover: '/books/tomato-lechuga/images/image-01.png',
+  openingAudio: '/books/tomato-lechuga/audio/audio-00.mp3',
+  description: 'Uma história de amor, ciúmes e ketchup.',
   pages: [
     {
       number: 1,
