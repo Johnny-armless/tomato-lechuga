@@ -6,21 +6,39 @@
   min-height: 100svh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 12px 12px 32px;
   gap: 12px;
   width: 100%;
   max-width: 560px;
   margin: 0 auto;
+  padding: 12px 12px 32px;
   box-sizing: border-box;
 }
 
-.rightCol {
+.stickyStack {
+  position: sticky;
+  top: 0;
+  z-index: 10;
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 12px;
-  width: 100%;
+  padding-top: 12px;
+  background: inherit;
+}
+
+.mediaRail {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.scrollArea {
+  min-height: 0;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 
@@ -30,26 +48,24 @@
 @media (orientation: landscape) and (max-height: 520px) {
   .wrapper {
     max-width: 100%;
-    display: grid;
-    grid-template-columns: 45% 1fr;
-    grid-template-rows: auto 1fr auto auto;
-    grid-template-areas:
-      "header header"
-      "image  right"
-      "nav    nav"
-      "dots   dots";
     padding: 8px 10px 10px;
     gap: 8px;
-    min-height: 100svh;
-    align-items: start;
   }
 
-  .rightCol {
-    grid-area: right;
-    align-self: stretch;
+  .stickyStack {
     gap: 8px;
-    overflow: hidden;
-    min-height: 0;
+    padding-top: 8px;
+  }
+
+  .mediaRail {
+    display: grid;
+    grid-template-columns: 45% 1fr;
+    align-items: start;
+    gap: 8px;
+  }
+
+  .controls {
+    gap: 8px;
   }
 }
 
@@ -63,6 +79,19 @@
     padding: 20px 20px 40px;
     gap: 16px;
   }
+
+  .stickyStack {
+    gap: 16px;
+    padding-top: 20px;
+  }
+
+  .mediaRail {
+    gap: 16px;
+  }
+
+  .controls {
+    gap: 16px;
+  }
 }
 
 
@@ -74,21 +103,36 @@
     max-width: 1020px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto 1fr auto auto;
+    grid-template-rows: auto auto 1fr auto auto;
     grid-template-areas:
       "header header"
-      "image  right"
+      "image  image"
+      "text   text"
       "nav    nav"
       "dots   dots";
     align-items: start;
     padding: 24px 24px 40px;
     gap: 20px;
-    min-height: 100svh;
   }
 
-  .rightCol {
-    grid-area: right;
-    align-self: stretch;
+  .stickyStack {
+    position: static;
+    display: contents;
+    padding-top: 0;
+  }
+
+  .mediaRail {
+    grid-area: image;
     gap: 16px;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+
+  .scrollArea {
+    grid-area: text;
+  }
+
+  .controls {
+    display: contents;
   }
 }

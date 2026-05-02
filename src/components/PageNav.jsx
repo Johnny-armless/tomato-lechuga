@@ -2,13 +2,13 @@
 
 import s from './PageNav.module.css';
 
-export default function PageNav({ onPrev, onNext, isFirst, isLast }) {
+export default function PageNav({ onPrev, onNext, isFirst, isLast, disabled = false }) {
   return (
     <nav className={s.nav}>
-      <button onClick={onPrev} disabled={isFirst} className={s.btn}>
+      <button onClick={onPrev} disabled={disabled || isFirst} className={s.btn}>
         ← ANTERIOR
       </button>
-      <button onClick={onNext} disabled={isLast} className={s.btn}>
+      <button onClick={onNext} disabled={disabled || isLast} className={s.btn}>
         PRÓXIMO →
       </button>
     </nav>

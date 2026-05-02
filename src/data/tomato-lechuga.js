@@ -2,14 +2,14 @@ const book = {
   id: 'tomato-lechuga',
   title: 'Francisco & Lechuga',
   slug: 'tomato-lechuga',
-  cover: '/books/tomato-lechuga/images/image-01.png',
-  openingAudio: '/books/tomato-lechuga/audio/audio-00.mp3',
+  cover: '/image/lechuga/image-01.png',
+  openingAudio: '/audio/lechuga/audio-00.mp3',
   description: 'Uma história de amor, ciúmes e ketchup.',
   pages: [
     {
       number: 1,
-      image: '/books/tomato-lechuga/images/image-01.png',
-      audio: '/books/tomato-lechuga/audio/audio-01.mp3',
+      image: '/image/lechuga/image-01.png',
+      audio: '/audio/lechuga/audio-01.mp3',
       paragraphs: [
   'Once upon a time,\num tomate chamado Francisco',
   'Ele morava dentro de uma fridge, uma geladeira grande e sempre bem organizada, onde cada alimento tinha o seu lugar.',
@@ -21,8 +21,8 @@ const book = {
     },
     {
       number: 2,
-      image: '/books/tomato-lechuga/images/image-02.png',
-      audio: '/books/tomato-lechuga/audio/audio-02.mp3',
+      image: '/image/lechuga/image-02.png',
+      audio: '/audio/lechuga/audio-02.mp3',
       paragraphs: [
   'Francisco não parava de pensar nela…',
   '"Lechuga… sua linda, você é o amor da minha vida."',
@@ -34,8 +34,8 @@ const book = {
     },
     {
       number: 3,
-      image: '/books/tomato-lechuga/images/image-03.png',
-      audio: '/books/tomato-lechuga/audio/audio-03.mp3',
+      image: '/image/lechuga/image-03.png',
+      audio: '/audio/lechuga/audio-03.mp3',
       paragraphs: [
   'Um dia, ele criou coragem…',
   '"Hello!"',
@@ -47,8 +47,8 @@ const book = {
     },
     {
       number: 4,
-      image: '/books/tomato-lechuga/images/image-04.png',
-      audio: '/books/tomato-lechuga/audio/audio-04.mp3',
+      image: '/image/lechuga/image-04.png',
+      audio: '/audio/lechuga/audio-04.mp3',
       paragraphs: [
   'Lechuga ficou sem graça…',
   '"My friend… eu sou committed…"',
@@ -63,8 +63,8 @@ const book = {
     },
     {
       number: 5,
-      image: '/books/tomato-lechuga/images/image-05.png',
-      audio: '/books/tomato-lechuga/audio/audio-05.mp3',
+      image: '/image/lechuga/image-05.png',
+      audio: '/audio/lechuga/audio-05.mp3',
       paragraphs: [
 
   'Francisco implorou…',
@@ -79,8 +79,8 @@ const book = {
     },
     {
       number: 6,
-      image: '/books/tomato-lechuga/images/image-06.png',
-      audio: '/books/tomato-lechuga/audio/audio-06.mp3',
+      image: '/image/lechuga/image-06.png',
+      audio: '/audio/lechuga/audio-06.mp3',
       paragraphs: [
   'Lechuga disse:',
   '"Se você conseguir sair da fridge…" "e pegar um ice cream no freezer…"',
@@ -91,8 +91,8 @@ const book = {
     },
     {
       number: 7,
-      image: '/books/tomato-lechuga/images/image-07.png',
-      audio: '/books/tomato-lechuga/audio/audio-07.mp3',
+      image: '/image/lechuga/image-07.png',
+      audio: '/audio/lechuga/audio-07.mp3',
       paragraphs: [
   'Ele começou a escalar a geladeira… cada movimento era uma batalha.',
   'Passava por ímãs de viagens… Spain… France… Peru… como se fossem degraus de um destino incerto.',
@@ -104,8 +104,8 @@ const book = {
     },
     {
       number: 8,
-      image: '/books/tomato-lechuga/images/image-08.png',
-      audio: '/books/tomato-lechuga/audio/audio-08.mp3',
+      image: '/image/lechuga/image-08.png',
+      audio: '/audio/lechuga/audio-08.mp3',
       paragraphs: [
   'E pior… havia algo ainda mais assustador à espreita.',
   'Gaspar, o cão malucão, estava por perto… atento a qualquer movimento estranho.',
@@ -117,8 +117,8 @@ const book = {
     },
     {
       number: 9,
-      image: '/books/tomato-lechuga/images/image-09.png',
-      audio: '/books/tomato-lechuga/audio/audio-09.mp3',
+      image: '/image/lechuga/image-09.png',
+      audio: '/audio/lechuga/audio-09.mp3',
       paragraphs: [
   'Dentro da geladeira… o cucumber observava tudo, com ciúmes e um sorriso malicioso.',
   'Ele resmungou, tentando se convencer:',
@@ -134,8 +134,8 @@ const book = {
     },
     {
       number: 10,
-      image: '/books/tomato-lechuga/images/image-10.png',
-      audio: '/books/tomato-lechuga/audio/audio-10.mp3',
+      image: '/image/lechuga/image-10.png',
+      audio: '/audio/lechuga/audio-10.mp3',
       paragraphs: [
   'O leite abriu a geladeira…',
   'E naquele momento… tudo aconteceu ao mesmo tempo.',
@@ -153,8 +153,8 @@ const book = {
     },
     {
       number: 11,
-      image: '/books/tomato-lechuga/images/image-11.png',
-      audio: '/books/tomato-lechuga/audio/audio-11.mp3',
+      image: '/image/lechuga/image-11.png',
+      audio: '/audio/lechuga/audio-11.mp3',
       paragraphs: [
   'Babu olhou para o chão…',
   '"Oh…" disse ele, meio surpreso.',
@@ -166,8 +166,8 @@ const book = {
     },
     {
       number: 12,
-      image: '/books/tomato-lechuga/images/image-12.png',
-      audio: '/books/tomato-lechuga/audio/audio-12.mp3',
+      image: '/image/lechuga/image-12.png',
+      audio: '/audio/lechuga/audio-12.mp3',
       paragraphs: [
   'Dentro da geladeira… o clima estava completamente diferente.',
   'Lechuga chorava em silêncio, com as folhas levemente caídas.',
@@ -179,8 +179,8 @@ const book = {
     },
     {
       number: 13,
-      image: '/books/tomato-lechuga/images/image-13.png',
-      audio: '/books/tomato-lechuga/audio/audio-13.mp3',
+      image: '/image/lechuga/image-13.png',
+      audio: '/audio/lechuga/audio-13.mp3',
       paragraphs: [
   'Babu ficou pensativo por um momento… ele estava triste pelo que tinha acontecido.',
   'Então teve uma ideia para tentar ajudar o tomate.',
@@ -192,8 +192,8 @@ const book = {
     },
     {
       number: 14,
-      image: '/books/tomato-lechuga/images/image-14.png',
-      audio: '/books/tomato-lechuga/audio/audio-14.mp3',
+      image: '/image/lechuga/image-14.png',
+      audio: '/audio/lechuga/audio-14.mp3',
       paragraphs: [
   'BZZZZZZZ!!!',
   'Tudo começou a girar… misturar… se transformar…',
@@ -205,8 +205,8 @@ const book = {
     },
     {
       number: 15,
-      image: '/books/tomato-lechuga/images/image-15.png',
-      audio: '/books/tomato-lechuga/audio/audio-15.mp3',
+      image: '/image/lechuga/image-15.png',
+      audio: '/audio/lechuga/audio-15.mp3',
       paragraphs: [
   'Então Babu teve outra ideia…',
   'Ele pegou mais carne, queijo e alface.',
@@ -220,8 +220,8 @@ const book = {
     },
     {
       number: 16,
-      image: '/books/tomato-lechuga/images/image-16.png',
-      audio: '/books/tomato-lechuga/audio/audio-16.mp3',
+      image: '/image/lechuga/image-16.png',
+      audio: '/audio/lechuga/audio-16.mp3',
       paragraphs:[
   'O homem abriu a boca…',
   '"Delicious!"',

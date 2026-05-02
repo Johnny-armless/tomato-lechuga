@@ -16,6 +16,9 @@ const nunito = Nunito({
 export const metadata = {
   title: 'My Storybooks',
   description: 'Digital storybooks for kids',
+  icons: {
+    icon: '/favicon.png',
+  },
 };
 
 export default function RootLayout({ children }) {
