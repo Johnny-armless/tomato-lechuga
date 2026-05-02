@@ -11,6 +11,10 @@
 .media {
   width: 100%;
   height: auto;
+  /* páginas com imagem retrato (ex: 6, 7, 11, 13, 14) atingem 500px+ de altura
+     no celular portrait e tampariam os botões de navegação — capa aqui */
+  max-height: 45svh;
+  object-fit: cover;
   display: block;
 }
 
@@ -24,11 +28,20 @@
 
 /* ── Landscape mobile ── */
 @media (orientation: landscape) and (max-height: 520px) {
-  .panel    { grid-area: image; border-width: 3px; box-shadow: 3px 3px 0 #000; border-radius: 3px; }
+  /* flex: 1 preenche o espaço disponível na coluna esquerda */
+  .panel    { flex: 1; min-height: 0; border-width: 3px; box-shadow: 3px 3px 0 #000; border-radius: 3px; }
+  /* image/video cobrem o painel sem distorcer */
+  .media    { height: 100%; object-fit: cover; }
   .fallback { padding: 16px 0; font-size: 3.5rem; }
+}
+
+/* ── Tablet portrait ── */
+@media (min-width: 768px) and (orientation: portrait) {
+  .media { max-height: 50svh; }
 }
 
 /* ── Desktop ── */
 @media (min-width: 1024px) {
-  .panel { grid-area: image; }
+  .panel { grid-area: image; max-height: none; }
+  .media { max-height: none; }
 }
